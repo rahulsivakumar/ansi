@@ -9,7 +9,8 @@
   hosts: centos1
  
   # Variable: variables that will apply to the play, on all target systems
-
+  vars_files:
+    - extra_vars_file.yml
   # Task: the list of tasks that will be executed within the playbook
   tasks:
     - name: Test extra vars
